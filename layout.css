@@ -1,0 +1,88 @@
+/* ==================================================
+   HARVEST + GRACE LAYOUT + GRID
+   ================================================== */
+
+* { box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: var(--site-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.container-sm { max-width: var(--content-width); margin-left: auto; margin-right: auto; }
+.container-md { max-width: 1000px; margin-left: auto; margin-right: auto; }
+.container-lg { max-width: var(--site-width); margin-left: auto; margin-right: auto; }
+.container-wide { max-width: var(--wide-width); margin-left: auto; margin-right: auto; }
+
+.section { padding-top: var(--space-10); padding-bottom: var(--space-10); }
+.section-sm { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+.section-lg { padding-top: var(--space-12); padding-bottom: var(--space-12); }
+
+.grid { display: grid; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gutter); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gutter); }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gutter); }
+.grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--gutter); }
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gutter);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(350px, 1fr);
+  gap: var(--gutter);
+  align-items: start;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: 485px minmax(0, 1fr);
+  gap: var(--gutter);
+  align-items: center;
+}
+
+.sidebar-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: var(--gutter);
+}
+
+.magazine-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--gutter);
+}
+
+.span-2 { grid-column: span 2; }
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.span-full { grid-column: 1 / -1; }
+
+@media (max-width: 991px) {
+  .grid-4,
+  .grid-5 { grid-template-columns: repeat(2, 1fr); }
+
+  .feature-grid,
+  .podcast-grid,
+  .sidebar-grid,
+  .magazine-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 767px) {
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5 { grid-template-columns: 1fr; }
+
+  .container {
+    padding-left: var(--container-padding-mobile);
+    padding-right: var(--container-padding-mobile);
+  }
+}

@@ -1,0 +1,110 @@
+/* ==================================================
+   HARVEST + GRACE IMAGES
+   ================================================== */
+
+img,
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.ratio-1x1,
+.ratio-4x3,
+.ratio-3x4,
+.ratio-16x9,
+.ratio-21x9,
+.ratio-hero {
+  overflow: hidden;
+}
+
+.ratio-1x1 { aspect-ratio: 1 / 1; }
+.ratio-4x3 { aspect-ratio: 4 / 3; }
+.ratio-3x4 { aspect-ratio: 3 / 4; }
+.ratio-16x9 { aspect-ratio: 16 / 9; }
+.ratio-21x9 { aspect-ratio: 21 / 9; }
+.ratio-hero { aspect-ratio: 16 / 7; }
+
+.ratio-1x1 img,
+.ratio-4x3 img,
+.ratio-3x4 img,
+.ratio-16x9 img,
+.ratio-21x9 img,
+.ratio-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-cover { width: 100%; height: 100%; object-fit: cover; }
+.img-contain { width: 100%; height: 100%; object-fit: contain; }
+.img-fill { width: 100%; height: 100%; object-fit: fill; }
+
+.img-top { object-position: top; }
+.img-center { object-position: center; }
+.img-bottom { object-position: bottom; }
+
+.hero-image,
+.feature-image,
+.blog-image,
+.podcast-image,
+.product-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image { aspect-ratio: 16 / 7; }
+.feature-image { aspect-ratio: 1 / 1; }
+.blog-image { aspect-ratio: 3 / 4; }
+.podcast-image { aspect-ratio: 1 / 1; }
+.product-image { aspect-ratio: 1 / 1; }
+
+.hero-image img,
+.feature-image img,
+.blog-image img,
+.podcast-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.avatar-xs { width: 32px; height: 32px; border-radius: 50%; }
+.avatar-sm { width: 48px; height: 48px; border-radius: 50%; }
+.avatar-md { width: 72px; height: 72px; border-radius: 50%; }
+.avatar-lg { width: 120px; height: 120px; border-radius: 50%; }
+.avatar-xl { width: 180px; height: 180px; border-radius: 50%; }
+
+.radius-none { border-radius: var(--radius-none); }
+.radius-sm { border-radius: var(--radius-sm); }
+.radius-md { border-radius: var(--radius-md); }
+.radius-lg { border-radius: var(--radius-lg); }
+.radius-xl { border-radius: var(--radius-xl); }
+.radius-full { border-radius: var(--radius-round); }
+
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.25);
+}
+
+.img-full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}

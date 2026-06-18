@@ -1,0 +1,74 @@
+/* ==================================================
+   HARVEST + GRACE CARDS
+   ================================================== */
+
+.card {
+  background: var(--color-white);
+  border: var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.card-body { padding: var(--space-3); }
+.card-body-lg { padding: var(--space-4); }
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.card-excerpt {
+  margin-bottom: 0;
+  color: var(--color-text-light);
+}
+
+.article-card .card-image { aspect-ratio: 3 / 4; }
+.recipe-card .card-image { aspect-ratio: 4 / 3; }
+.product-card .card-image { aspect-ratio: 1 / 1; }
+.podcast-card .card-image { aspect-ratio: 1 / 1; }
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-hover {
+  transition: var(--transition-normal);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.stat-card {
+  padding: var(--space-4);
+  background: var(--color-background-alt);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
