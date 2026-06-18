@@ -18,7 +18,7 @@
 .section-sm { padding-top: var(--space-6); padding-bottom: var(--space-6); }
 .section-lg { padding-top: var(--space-12); padding-bottom: var(--space-12); }
 
-.grid { display: grid; }
+.grid { display: grid !important;}
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gutter); }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gutter); }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gutter); }
