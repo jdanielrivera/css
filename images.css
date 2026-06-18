@@ -105,8 +105,18 @@ img,
   margin-left: calc(50% - 50vw);
 }
 
-/* IMAGE WRAPPER */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.image-3x4 {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* IMAGE WRAPPER */
 .media-wrap {
   display: block;
   width: 100%;
