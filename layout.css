@@ -23,6 +23,7 @@
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gutter); }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--gutter); }
 .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--gutter); }
+.grid-6 { display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--gutter); }
 
 .grid-auto {
   display: grid;
