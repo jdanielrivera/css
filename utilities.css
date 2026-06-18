@@ -172,3 +172,34 @@
 .hidden { display: none; }
 .block { display: block; }
 .inline-block { display: inline-block; }
+
+/* Layout Utilities */
+.content-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.stack-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stack-16 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stack-24 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.stack-40 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
