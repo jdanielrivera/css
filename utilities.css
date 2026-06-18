@@ -28,6 +28,10 @@
 .mb-6 { margin-bottom: var(--space-6); }
 .mb-7 { margin-bottom: var(--space-7); }
 .mb-8 { margin-bottom: var(--space-8); }
+.mb-9 { margin-bottom: var(--space-9); }
+.mb-10 { margin-bottom: var(--space-10); }
+.mb-11 { margin-bottom: var(--space-11); }
+.mb-12 { margin-bottom: var(--space-12); }
 
 .mx-auto { margin-left: auto; margin-right: auto; }
 .mx-0 { margin-left: 0; margin-right: 0; }
