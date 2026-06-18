@@ -104,3 +104,15 @@ img,
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
+
+/* IMAGE WRAPPER */
+
+.media-wrap {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.media-wrap img {
+  display: block;
+}
